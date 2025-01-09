@@ -63,7 +63,7 @@ const index = () => {
   return (
     
    <ScrollView style={styles.container}>
-      {/* <FlatList
+      <FlatList
         data={dummy}
         renderItem={({ item }) => (
           <View style={styles.card}>
@@ -90,11 +90,12 @@ const index = () => {
         numColumns={2}
         columnWrapperStyle={{ gap: 10 }}
       />
-     */}
+    
 
      {
       dummy.map((item,index)=>(
         <View style={styles.card}>
+       
         <Image
           style={styles.img}
           source={{
